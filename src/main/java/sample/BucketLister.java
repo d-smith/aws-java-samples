@@ -11,8 +11,8 @@ public class BucketLister {
     public static void main(String[] args) throws Exception {
 
         ClientConfiguration config = new ClientConfiguration()
-                .withProxyHost("http.proxy.fmr.com")
-                .withProxyPort(8000);
+                .withProxyHost("proxy-host")
+                .withProxyPort(1234);
 
        AmazonS3 s3 = new AmazonS3Client(new ClasspathPropertiesFileCredentialsProvider(), config);
 

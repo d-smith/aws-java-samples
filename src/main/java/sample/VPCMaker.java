@@ -14,8 +14,6 @@ public class VPCMaker {
 
     public VPCMaker() {
         ClientConfiguration config = new ClientConfiguration()
-                //.withProxyHost("http.proxy.fmr.com")
-                //.withProxyPort(8000)
                 ;
 
         client = new AmazonEC2Client(
